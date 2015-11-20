@@ -1,0 +1,18 @@
+from math import sqrt
+m = int(raw_input("Input a positive integer: "))
+
+def is_prime(x):
+    if x < 2:
+        return False
+    if x % 2 == 0:
+        return False or x == 2
+    else:
+        Flag = True
+        r = int(sqrt(x)) + 1
+        for n in range(3, r, 2):
+            if (x % n) == 0:
+                Flag = False
+                break
+        return Flag
+            
+print is_prime(m)

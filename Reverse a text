@@ -1,0 +1,11 @@
+text = raw_input("Input text for reverse: ")
+
+def reverse(text):
+    letters = []
+    for i in text:
+        letters.append(i)
+    letters.reverse()
+    new_str = "".join(letters)
+    return new_str
+    
+print "Reversed word: " + reverse(text)  

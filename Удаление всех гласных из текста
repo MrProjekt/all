@@ -1,0 +1,12 @@
+text = raw_input("Input text: ")
+
+vowels = ['a','e','i','o','u', 'y']
+
+def anti_vowel(text):
+    new_str = ""
+    for n in text:
+        if n.lower() not in vowels:
+            new_str += n
+    return new_str
+
+print anti_vowel(text)
